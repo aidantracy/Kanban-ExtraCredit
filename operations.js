@@ -8,9 +8,17 @@ function subtract(a, b)
     return a - b;
 }
 
+function divide(a, b)
+{
+    if(b == 0){
+        return NaN;
+    }
+    return a/b;
+}
+
 
 module.exports = {
     sum,
-    subtract
-     //TODO: uncomment this line to make the subtract function available in other files
+    subtract,
+    divide
 };
