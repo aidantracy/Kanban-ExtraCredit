@@ -7,7 +7,13 @@ const { divide } = require('./operations.js')
 
 // go to http://localhost:3000/ to see this message
 app.get('/', (req, res) => {
-    res.send('Hello world!')
+    res.send('Hello world!, create a button going to /main')
+});
+
+
+// go to http://localhost:3000/main to see this message
+app.get('/main', (req, res) => {
+    res.send("This will be the main page")
 });
 
 // go to http://localhost:3000/about to see this message
