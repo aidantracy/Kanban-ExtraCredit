@@ -10,7 +10,6 @@ app.get('/', (req, res) => {
     res.send('Hello world!, create a button going to /main')
 });
 
-
 // go to http://localhost:3000/main to see this message
 app.get('/main', (req, res) => {
     res.send("This will be the main page")
